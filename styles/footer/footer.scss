@@ -1,0 +1,338 @@
+.footer {
+  background-image: url("../PNG/footer.svg");
+
+  width: 1680px;
+  height: 645px;
+  margin-top: 25px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+
+    &-logo {
+      display: flex;
+      flex-direction: row;
+      margin-top: 170px;
+      margin-left: 155px;
+      gap: 10px;
+    }
+
+    &-input {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 667px;
+      height: 48px;
+      border: 1px solid #FFFFFF33;
+      margin-top: 178px;
+      margin-left: 381px;
+
+      a {
+        color: #fff;
+        font-size: 16px;
+        margin-left: 10px;
+        white-space: nowrap;
+      }
+    }
+
+    &-email {
+      margin-left: 22px;
+    }
+
+    &-send {
+      margin-left: 180px;
+    }
+  }
+
+  &__line {
+    margin-left: 160px;
+    margin-top: 10px;
+  }
+
+  &__container2 {
+    display: flex;
+    flex-direction: row;
+
+    &-variants {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    &-apps {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 17px;
+    }
+
+    &-access {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      font-size: 16px;
+      gap: 35px;
+      margin-top: 35px;
+      margin-left: 160px;
+    }
+
+    &-number img,
+    &-email img {
+      width: 23px;
+      margin-top: -1px;
+    }
+
+    &-emailinfo,
+    &-numberinfo {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    &-emailblock,
+    &-numberblock {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &-emailtext,
+    &-numbertext {
+      font-size: 12px;
+      color: #BDBDBD;
+    }
+
+    &-numbertext {
+      line-height: 1.8;
+    }
+
+    &-email,
+    &-number {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+      margin-left: 100px;
+
+      h1 {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+
+    &-numberblock {
+      align-items: flex-start;
+    }
+  }
+
+  &__container-help h1,
+  &__container-company h1,
+  &__container-inc h1 {
+    color: #fff;
+  }
+
+  &__container-helplist,
+  &__container-companylist,
+  &__container-inclist {
+    list-style: none;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: 23px;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .helplist-item a,
+  .companylist-item a,
+  .inclist-item a {
+    text-decoration: none;
+    color: #BDBDBD;
+  }
+
+  &__container-help {
+    margin-top: 25px;
+    margin-left: 113px;
+  }
+
+  &__container-company {
+    margin-top: 26px;
+    margin-left: 125px;
+  }
+
+  &__container-inc {
+    margin-top: 25px;
+    margin-left: 95px;
+  }
+
+  &__line2 {
+    margin-left: 160px;
+    margin-top: 15px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 920px;
+
+    a {
+      color: #fff;
+      font-size: 12px;
+    }
+
+    &-apps {
+      display: flex;
+      gap: 25px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .footer {
+      &__container2 {
+        gap: 40px;
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .footer {
+      &__container {
+        justify-content: center;
+  
+        &-logo {
+          opacity: 0;
+          pointer-events: none;
+        }
+  
+        &-input {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+  
+      &__container2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+  
+        &-access,
+        &-contacts,
+        &-help,
+        &-company,
+        &-inc {
+          margin-left: 0;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .footer {
+      &__container2 {
+        gap: 30px;
+  
+        &-access {
+          font-size: 15px;
+        }
+  
+        &-emailinfo,
+        &-numberinfo {
+          font-size: 16px;
+        }
+  
+        &-emailtext,
+        &-numbertext {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      &__container2 {
+        gap: 25px;
+  
+        &-variants {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 25px;
+        }
+      }
+  
+      &__container-help,
+      &__container-company,
+      &__container-inc {
+        margin-left: 0;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer {
+      &__container2 {
+        gap: 20px;
+  
+        &-access {
+          font-size: 14px;
+          gap: 25px;
+        }
+      }
+  
+      &__container-helplist,
+      &__container-companylist,
+      &__container-inclist {
+        font-size: 11px;
+  
+        li {
+          margin-bottom: 14px;
+        }
+      }
+  
+      &__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+  
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .footer {
+      &__container2 {
+        gap: 15px;
+      }
+  
+      &__container-helplist,
+      &__container-companylist,
+      &__container-inclist {
+        font-size: 10px;
+      }
+    }
+  }
+  
+}
+
+.googleplay,
+.appstore {
+  width: 173px;
+}
+
+.qr {
+  width: 116px;
+}

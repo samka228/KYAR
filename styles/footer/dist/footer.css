@@ -1,0 +1,252 @@
+.footer {
+  background-image: url("../PNG/footer.svg");
+  width: 1680px;
+  height: 645px;
+  margin-top: 25px;
+}
+.footer__container {
+  display: flex;
+  flex-direction: row;
+}
+.footer__container-logo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 170px;
+  margin-left: 155px;
+  gap: 10px;
+}
+.footer__container-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 667px;
+  height: 48px;
+  border: 1px solid #FFFFFF33;
+  margin-top: 178px;
+  margin-left: 381px;
+}
+.footer__container-input a {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.footer__container-email {
+  margin-left: 22px;
+}
+.footer__container-send {
+  margin-left: 180px;
+}
+.footer__line {
+  margin-left: 160px;
+  margin-top: 10px;
+}
+.footer__container2 {
+  display: flex;
+  flex-direction: row;
+}
+.footer__container2-variants {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer__container2-apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 17px;
+}
+.footer__container2-access {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 16px;
+  gap: 35px;
+  margin-top: 35px;
+  margin-left: 160px;
+}
+.footer__container2-number img, .footer__container2-email img {
+  width: 23px;
+  margin-top: -1px;
+}
+.footer__container2-emailinfo, .footer__container2-numberinfo {
+  color: #fff;
+  font-size: 18px;
+}
+.footer__container2-emailblock, .footer__container2-numberblock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__container2-emailtext, .footer__container2-numbertext {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+.footer__container2-numbertext {
+  line-height: 1.8;
+}
+.footer__container2-email, .footer__container2-number {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.footer__container2-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.footer__container2-contacts h1 {
+  color: #fff;
+  font-size: 16px;
+}
+.footer__container2-numberblock {
+  align-items: flex-start;
+}
+.footer__container-help h1, .footer__container-company h1, .footer__container-inc h1 {
+  color: #fff;
+}
+.footer__container-helplist, .footer__container-companylist, .footer__container-inclist {
+  list-style: none;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  margin-top: 23px;
+}
+.footer__container-helplist li, .footer__container-companylist li, .footer__container-inclist li {
+  margin-bottom: 20px;
+}
+.footer .helplist-item a,
+.footer .companylist-item a,
+.footer .inclist-item a {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+.footer__container-help {
+  margin-top: 25px;
+  margin-left: 113px;
+}
+.footer__container-company {
+  margin-top: 26px;
+  margin-left: 125px;
+}
+.footer__container-inc {
+  margin-top: 25px;
+  margin-left: 95px;
+}
+.footer__line2 {
+  margin-left: 160px;
+  margin-top: 15px;
+}
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 920px;
+}
+.footer__bottom a {
+  color: #fff;
+  font-size: 12px;
+}
+.footer__bottom-apps {
+  display: flex;
+  gap: 25px;
+}
+@media (max-width: 1200px) {
+  .footer .footer__container2 {
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer .footer__container {
+    justify-content: center;
+  }
+  .footer .footer__container-logo {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .footer .footer__container-input {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .footer .footer__container2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer .footer__container2-access, .footer .footer__container2-contacts, .footer .footer__container2-help, .footer .footer__container2-company, .footer .footer__container2-inc {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .footer .footer__container2 {
+    gap: 30px;
+  }
+  .footer .footer__container2-access {
+    font-size: 15px;
+  }
+  .footer .footer__container2-emailinfo, .footer .footer__container2-numberinfo {
+    font-size: 16px;
+  }
+  .footer .footer__container2-emailtext, .footer .footer__container2-numbertext {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container2 {
+    gap: 25px;
+  }
+  .footer .footer__container2-variants {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  .footer .footer__container-help, .footer .footer__container-company, .footer .footer__container-inc {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer .footer__container2 {
+    gap: 20px;
+  }
+  .footer .footer__container2-access {
+    font-size: 14px;
+    gap: 25px;
+  }
+  .footer .footer__container-helplist, .footer .footer__container-companylist, .footer .footer__container-inclist {
+    font-size: 11px;
+  }
+  .footer .footer__container-helplist li, .footer .footer__container-companylist li, .footer .footer__container-inclist li {
+    margin-bottom: 14px;
+  }
+  .footer .footer__bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .footer .footer__bottom a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .footer .footer__container2 {
+    gap: 15px;
+  }
+  .footer .footer__container-helplist, .footer .footer__container-companylist, .footer .footer__container-inclist {
+    font-size: 10px;
+  }
+}
+
+.googleplay,
+.appstore {
+  width: 173px;
+}
+
+.qr {
+  width: 116px;
+}

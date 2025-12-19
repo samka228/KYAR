@@ -1,0 +1,396 @@
+.club {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 10px;
+
+  &__program {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &-logo,
+    &-text1,
+    &-text2,
+    &-button {
+      position: absolute;
+    }
+
+    &-logo {
+      margin-top: 290px;
+    }
+
+    &-text1 {
+      margin-top: 388px;
+      font-size: 32px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &-text2 {
+      margin-top: 445px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    &-button {
+      width: 292px;
+      height: 50px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      margin-top: 493px;
+    }
+  }
+
+  &__mail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &-logo,
+    &-sale,
+    &-text,
+    &-input {
+      position: absolute;
+    }
+
+    &-card {
+      width: 667px;
+      height: 789px;
+    }
+
+    &-logo {
+      margin-top: 305px;
+    }
+
+    &-sale {
+      font-size: 32px;
+      color: #fff;
+      margin-top: 388px;
+    }
+
+    &-text {
+      font-size: 16px;
+      color: #fff;
+      margin-top: 445px;
+    }
+
+    &-input {
+      margin-top: 493px;
+      display: flex;
+      flex-direction: row;
+      width: 401px;
+      height: 50px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        font-size: 14px;
+        margin-right: 270px;
+        margin-left: 10px;
+      }
+    }
+
+    &-button1 {
+      width: 20px;
+      height: 16px;
+    }
+
+    &-button2 {
+      width: 22px;
+      height: 19px;
+    }
+  }
+  // Responsive layout - cards shrink and wrap
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+
+    &__program,
+    &__mail {
+      flex: 0 1 calc(50% - 12.5px);
+      min-width: 300px;
+      max-width: 667px;
+    }
+
+    &__program {
+      &-card {
+        width: 100%;
+        height: auto;
+        max-width: 667px;
+      }
+
+      &-logo {
+        margin-top: calc(290px * (100vw / 1400px));
+        width: clamp(60px, 8.5vw, 120px);
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &-text1 {
+        margin-top: calc(388px * (100vw / 1400px));
+        font-size: clamp(20px, 2.3vw, 32px);
+      }
+
+      &-text2 {
+        margin-top: calc(445px * (100vw / 1400px));
+        font-size: clamp(12px, 1.15vw, 16px);
+      }
+
+      &-button {
+        margin-top: calc(493px * (100vw / 1400px));
+        width: clamp(200px, 21vw, 292px);
+        height: clamp(40px, 3.6vw, 50px);
+        font-size: clamp(12px, 1.15vw, 16px);
+      }
+    }
+
+    &__mail {
+      &-card {
+        width: 100%;
+        height: auto;
+        max-width: 667px;
+      }
+
+      &-logo {
+        margin-top: calc(305px * (100vw / 1400px));
+        width: clamp(60px, 8.5vw, 120px);
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &-sale {
+        margin-top: calc(388px * (100vw / 1400px));
+        font-size: clamp(20px, 2.3vw, 32px);
+      }
+
+      &-text {
+        margin-top: calc(445px * (100vw / 1400px));
+        font-size: clamp(12px, 1.15vw, 16px);
+      }
+
+      &-input {
+        margin-top: calc(493px * (100vw / 1400px));
+        width: clamp(280px, 29vw, 401px);
+        height: clamp(40px, 3.6vw, 50px);
+
+        a {
+          font-size: clamp(11px, 1vw, 14px);
+          margin-right: clamp(180px, 19vw, 270px);
+        }
+      }
+
+      &-button1 {
+        width: clamp(16px, 1.4vw, 20px);
+        height: clamp(12px, 1.15vw, 16px);
+      }
+
+      &-button2 {
+        width: clamp(18px, 1.6vw, 22px);
+        height: clamp(15px, 1.35vw, 19px);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &__program,
+    &__mail {
+      flex: 0 1 100%;
+      max-width: 667px;
+      width: 100%;
+    }
+
+    &__program {
+      &-logo {
+        margin-top: calc(290px * 0.85);
+        width: clamp(80px, 10vw, 120px);
+      }
+
+      &-text1 {
+        margin-top: calc(388px * 0.85);
+        font-size: clamp(24px, 3vw, 28px);
+      }
+
+      &-text2 {
+        margin-top: calc(445px * 0.85);
+        font-size: clamp(14px, 1.5vw, 16px);
+      }
+
+      &-button {
+        margin-top: calc(493px * 0.85);
+        width: clamp(240px, 30vw, 280px);
+        height: clamp(44px, 4.5vw, 48px);
+        font-size: clamp(14px, 1.5vw, 16px);
+      }
+    }
+
+    &__mail {
+      &-logo {
+        margin-top: calc(305px * 0.85);
+        width: clamp(80px, 10vw, 120px);
+      }
+
+      &-sale {
+        margin-top: calc(388px * 0.85);
+        font-size: clamp(24px, 3vw, 28px);
+      }
+
+      &-text {
+        margin-top: calc(445px * 0.85);
+        font-size: clamp(14px, 1.5vw, 16px);
+      }
+
+      &-input {
+        margin-top: calc(493px * 0.85);
+        width: clamp(320px, 40vw, 380px);
+        height: clamp(44px, 4.5vw, 48px);
+
+        a {
+          font-size: clamp(12px, 1.3vw, 14px);
+          margin-right: clamp(200px, 25vw, 240px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
+
+    &__program,
+    &__mail {
+      max-width: 100%;
+    }
+
+    &__program {
+      &-logo {
+        margin-top: calc(290px * 0.75);
+        width: clamp(70px, 9vw, 100px);
+      }
+
+      &-text1 {
+        margin-top: calc(388px * 0.75);
+        font-size: clamp(20px, 2.5vw, 24px);
+      }
+
+      &-text2 {
+        margin-top: calc(445px * 0.75);
+        font-size: clamp(12px, 1.4vw, 14px);
+      }
+
+      &-button {
+        margin-top: calc(493px * 0.75);
+        width: clamp(220px, 35vw, 260px);
+        height: clamp(42px, 5vw, 46px);
+        font-size: clamp(13px, 1.4vw, 15px);
+      }
+    }
+
+    &__mail {
+      &-logo {
+        margin-top: calc(305px * 0.75);
+        width: clamp(70px, 9vw, 100px);
+      }
+
+      &-sale {
+        margin-top: calc(388px * 0.75);
+        font-size: clamp(20px, 2.5vw, 24px);
+      }
+
+      &-text {
+        margin-top: calc(445px * 0.75);
+        font-size: clamp(12px, 1.4vw, 14px);
+      }
+
+      &-input {
+        margin-top: calc(493px * 0.75);
+        width: clamp(280px, 45vw, 340px);
+        height: clamp(42px, 5vw, 46px);
+
+        a {
+          font-size: clamp(11px, 1.3vw, 13px);
+          margin-right: clamp(180px, 28vw, 220px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    gap: 12px;
+
+    &__program,
+    &__mail {
+      max-width: 100%;
+    }
+
+    &__program {
+      &-logo {
+        margin-top: calc(290px * 0.65);
+        width: clamp(60px, 10vw, 90px);
+      }
+
+      &-text1 {
+        margin-top: calc(388px * 0.65);
+        font-size: clamp(18px, 3vw, 22px);
+      }
+
+      &-text2 {
+        margin-top: calc(445px * 0.65);
+        font-size: clamp(11px, 1.5vw, 13px);
+      }
+
+      &-button {
+        margin-top: calc(493px * 0.65);
+        width: clamp(200px, 50vw, 240px);
+        height: clamp(40px, 6vw, 44px);
+        font-size: clamp(12px, 1.5vw, 14px);
+      }
+    }
+
+    &__mail {
+      &-logo {
+        margin-top: calc(305px * 0.65);
+        width: clamp(60px, 10vw, 90px);
+      }
+
+      &-sale {
+        margin-top: calc(388px * 0.65);
+        font-size: clamp(18px, 3vw, 22px);
+      }
+
+      &-text {
+        margin-top: calc(445px * 0.65);
+        font-size: clamp(11px, 1.5vw, 13px);
+      }
+
+      &-input {
+        margin-top: calc(493px * 0.65);
+        width: clamp(260px, 55vw, 300px);
+        height: clamp(40px, 6vw, 44px);
+
+        a {
+          font-size: clamp(10px, 1.4vw, 12px);
+          margin-right: clamp(160px, 35vw, 190px);
+        }
+      }
+    }
+  }
+
+}

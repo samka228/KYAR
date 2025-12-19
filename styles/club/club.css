@@ -1,0 +1,311 @@
+.club {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 10px;
+}
+.club__program {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.club__program-logo, .club__program-text1, .club__program-text2, .club__program-button {
+  position: absolute;
+}
+.club__program-logo {
+  margin-top: 290px;
+}
+.club__program-text1 {
+  margin-top: 388px;
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+.club__program-text2 {
+  margin-top: 445px;
+  font-size: 16px;
+  color: #fff;
+}
+.club__program-button {
+  width: 292px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 493px;
+}
+.club__mail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.club__mail-logo, .club__mail-sale, .club__mail-text, .club__mail-input {
+  position: absolute;
+}
+.club__mail-card {
+  width: 667px;
+  height: 789px;
+}
+.club__mail-logo {
+  margin-top: 305px;
+}
+.club__mail-sale {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 388px;
+}
+.club__mail-text {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 445px;
+}
+.club__mail-input {
+  margin-top: 493px;
+  display: flex;
+  flex-direction: row;
+  width: 401px;
+  height: 50px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.club__mail-input a {
+  font-size: 14px;
+  margin-right: 270px;
+  margin-left: 10px;
+}
+.club__mail-button1 {
+  width: 20px;
+  height: 16px;
+}
+.club__mail-button2 {
+  width: 22px;
+  height: 19px;
+}
+@media (max-width: 1400px) {
+  .club {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .club__program, .club__mail {
+    flex: 0 1 calc(50% - 12.5px);
+    min-width: 300px;
+    max-width: 667px;
+  }
+  .club__program-card {
+    width: 100%;
+    height: auto;
+    max-width: 667px;
+  }
+  .club__program-logo {
+    margin-top: 20.7142857143vw;
+    width: clamp(60px, 8.5vw, 120px);
+    height: auto;
+  }
+  .club__program-logo img {
+    width: 100%;
+    height: auto;
+  }
+  .club__program-text1 {
+    margin-top: 27.7142857143vw;
+    font-size: clamp(20px, 2.3vw, 32px);
+  }
+  .club__program-text2 {
+    margin-top: 31.7857142857vw;
+    font-size: clamp(12px, 1.15vw, 16px);
+  }
+  .club__program-button {
+    margin-top: 35.2142857143vw;
+    width: clamp(200px, 21vw, 292px);
+    height: clamp(40px, 3.6vw, 50px);
+    font-size: clamp(12px, 1.15vw, 16px);
+  }
+  .club__mail-card {
+    width: 100%;
+    height: auto;
+    max-width: 667px;
+  }
+  .club__mail-logo {
+    margin-top: 21.7857142857vw;
+    width: clamp(60px, 8.5vw, 120px);
+    height: auto;
+  }
+  .club__mail-logo img {
+    width: 100%;
+    height: auto;
+  }
+  .club__mail-sale {
+    margin-top: 27.7142857143vw;
+    font-size: clamp(20px, 2.3vw, 32px);
+  }
+  .club__mail-text {
+    margin-top: 31.7857142857vw;
+    font-size: clamp(12px, 1.15vw, 16px);
+  }
+  .club__mail-input {
+    margin-top: 35.2142857143vw;
+    width: clamp(280px, 29vw, 401px);
+    height: clamp(40px, 3.6vw, 50px);
+  }
+  .club__mail-input a {
+    font-size: clamp(11px, 1vw, 14px);
+    margin-right: clamp(180px, 19vw, 270px);
+  }
+  .club__mail-button1 {
+    width: clamp(16px, 1.4vw, 20px);
+    height: clamp(12px, 1.15vw, 16px);
+  }
+  .club__mail-button2 {
+    width: clamp(18px, 1.6vw, 22px);
+    height: clamp(15px, 1.35vw, 19px);
+  }
+}
+@media (max-width: 992px) {
+  .club {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .club__program, .club__mail {
+    flex: 0 1 100%;
+    max-width: 667px;
+    width: 100%;
+  }
+  .club__program-logo {
+    margin-top: 246.5px;
+    width: clamp(80px, 10vw, 120px);
+  }
+  .club__program-text1 {
+    margin-top: 329.8px;
+    font-size: clamp(24px, 3vw, 28px);
+  }
+  .club__program-text2 {
+    margin-top: 378.25px;
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+  .club__program-button {
+    margin-top: 419.05px;
+    width: clamp(240px, 30vw, 280px);
+    height: clamp(44px, 4.5vw, 48px);
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+  .club__mail-logo {
+    margin-top: 259.25px;
+    width: clamp(80px, 10vw, 120px);
+  }
+  .club__mail-sale {
+    margin-top: 329.8px;
+    font-size: clamp(24px, 3vw, 28px);
+  }
+  .club__mail-text {
+    margin-top: 378.25px;
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+  .club__mail-input {
+    margin-top: 419.05px;
+    width: clamp(320px, 40vw, 380px);
+    height: clamp(44px, 4.5vw, 48px);
+  }
+  .club__mail-input a {
+    font-size: clamp(12px, 1.3vw, 14px);
+    margin-right: clamp(200px, 25vw, 240px);
+  }
+}
+@media (max-width: 768px) {
+  .club {
+    gap: 15px;
+  }
+  .club__program, .club__mail {
+    max-width: 100%;
+  }
+  .club__program-logo {
+    margin-top: 217.5px;
+    width: clamp(70px, 9vw, 100px);
+  }
+  .club__program-text1 {
+    margin-top: 291px;
+    font-size: clamp(20px, 2.5vw, 24px);
+  }
+  .club__program-text2 {
+    margin-top: 333.75px;
+    font-size: clamp(12px, 1.4vw, 14px);
+  }
+  .club__program-button {
+    margin-top: 369.75px;
+    width: clamp(220px, 35vw, 260px);
+    height: clamp(42px, 5vw, 46px);
+    font-size: clamp(13px, 1.4vw, 15px);
+  }
+  .club__mail-logo {
+    margin-top: 228.75px;
+    width: clamp(70px, 9vw, 100px);
+  }
+  .club__mail-sale {
+    margin-top: 291px;
+    font-size: clamp(20px, 2.5vw, 24px);
+  }
+  .club__mail-text {
+    margin-top: 333.75px;
+    font-size: clamp(12px, 1.4vw, 14px);
+  }
+  .club__mail-input {
+    margin-top: 369.75px;
+    width: clamp(280px, 45vw, 340px);
+    height: clamp(42px, 5vw, 46px);
+  }
+  .club__mail-input a {
+    font-size: clamp(11px, 1.3vw, 13px);
+    margin-right: clamp(180px, 28vw, 220px);
+  }
+}
+@media (max-width: 576px) {
+  .club {
+    gap: 12px;
+  }
+  .club__program, .club__mail {
+    max-width: 100%;
+  }
+  .club__program-logo {
+    margin-top: 188.5px;
+    width: clamp(60px, 10vw, 90px);
+  }
+  .club__program-text1 {
+    margin-top: 252.2px;
+    font-size: clamp(18px, 3vw, 22px);
+  }
+  .club__program-text2 {
+    margin-top: 289.25px;
+    font-size: clamp(11px, 1.5vw, 13px);
+  }
+  .club__program-button {
+    margin-top: 320.45px;
+    width: clamp(200px, 50vw, 240px);
+    height: clamp(40px, 6vw, 44px);
+    font-size: clamp(12px, 1.5vw, 14px);
+  }
+  .club__mail-logo {
+    margin-top: 198.25px;
+    width: clamp(60px, 10vw, 90px);
+  }
+  .club__mail-sale {
+    margin-top: 252.2px;
+    font-size: clamp(18px, 3vw, 22px);
+  }
+  .club__mail-text {
+    margin-top: 289.25px;
+    font-size: clamp(11px, 1.5vw, 13px);
+  }
+  .club__mail-input {
+    margin-top: 320.45px;
+    width: clamp(260px, 55vw, 300px);
+    height: clamp(40px, 6vw, 44px);
+  }
+  .club__mail-input a {
+    font-size: clamp(10px, 1.4vw, 12px);
+    margin-right: clamp(160px, 35vw, 190px);
+  }
+}/*# sourceMappingURL=club.css.map */

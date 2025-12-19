@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'GrtskPeta';
+	src: url('../Fonts/GrtskPeta-Medium.woff2') format('woff2');
+}
+
+body {
+  font-family: 'GrtskPeta', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 0.5625em; /* 9px */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0em; /* 0px */
+}
+
+@import './header/header.scss';
+@import './banner/banner.scss';
+@import './company/company.scss';
+@import './sale/sale.scss';
+@import './release/release.scss';
+@import './DC/DC.scss';
+@import './announcements/announcements.scss';
+@import './blogs/blogs.scss';
+@import './club/club.scss';
+@import './footer/footer.scss';
